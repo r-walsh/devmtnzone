@@ -1,0 +1,1376 @@
+/* KUTOA stylesheet */
+
+/* GLOBAL STYLES */
+
+/*
+* {
+  outline: 1px dotted red;
+}*/
+
+.outline {
+  outline: 1px dotted red;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ui-view {
+  width: 100%; 
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.main-content {
+  position: absolute;
+  top: 111px;
+  margin: 0;
+  /*padding: 5px;*/
+}
+
+.col-sm {
+  width: 33%;
+}
+
+.col-lg {
+  width: 66%;
+}
+
+html {
+  overflow: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* WHITE HEADER STYLES - all pages except index.html */
+
+.white-header {
+  width: 100%;
+  height: 90px;
+  padding: 0 0 0 40px;
+  border-bottom: 1px solid rgb(204,204,204);
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  position: fixed;
+  z-index: 1000;
+  background-color: #ffffff;
+}
+
+
+
+header .all-pages {
+  height: 90px;
+  width: 1280px;
+  padding: 20px 0 0 40px;
+}
+
+
+.col-sm-white img {
+  width: 300px; 
+  height: auto;
+}
+
+.col-lg-white {
+  margin-right: 0;
+  margin-left: 30%;
+  width: 76%;
+}
+
+ul.menu-white li {
+  list-style: none;
+  font-size: 1.5em;
+  color: rgb(48,48,48);
+  font-weight: bold;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1%;
+}
+
+ul.menu-white li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: rgb(48,48,48);
+  font-family: "Just Another Hand", sans-serif;
+}
+
+ul.menu-white li a:hover {
+  color: rgb(235,117,65);
+  text-decoration: 5px solid rgb(235,225,195);
+}
+
+ul.menu-white li span i {
+  color: rgb(48,48,48);
+  font-size: 0.5em;
+}
+
+ul.menu-white li i {
+  color: rgb(48,48,48);
+  font-size: 0.8em;
+}
+
+
+ul.menu-white li.cart {  
+  background-color: rgb(235,225,195);
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+ul.menu-white li.cart span {
+  color: rgb(48,48,48);
+  padding: 0 10px;
+}
+
+ul.menu-white li.cart i {
+  color: rgb(48,48,48);
+  padding: 0 5px;
+}
+
+#nav2 {  
+  position: relative;
+  float: left;
+  height: 35px;
+  padding-top: 20px;
+  margin-top: 200px;
+}
+
+.breadcrumbs {
+  float: left;
+  margin-left: 40px;
+  margin-top: 120px;
+}
+
+.breadcrumbs ul {
+  margin: 0px;
+}
+
+.breadcrumbs ul li {
+  display: inline-block;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  color: rgb(79,79,79);
+}
+
+
+.breadcrumbs ul li a {
+  text-decoration: none;
+/*  font-size: 12px;*/
+   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  color: rgb(48,48,48);
+}
+
+.categories {
+  float: right;
+  margin-right: 30px;
+  padding-right: 60px;
+}
+
+.categories select { 
+  color: rgb(115,115,115);
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  margin-top: 120px;
+  margin-bottom: 15px;    
+}
+
+
+/* HOME HEADER STYLES */
+
+#logo {
+  height: 80px;
+  width: 80px;
+}
+
+.green {
+  color: seagreen !important;
+  border: 1px solid seagreen;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+div.image {
+  background-image: url(../images/home/group-proj-1.jpg);
+  height: 100%;
+  background-size: cover;
+  width: auto;
+  max-width: 100%;
+/*
+  -moz-transform:scale(1);
+  -webkit-transform:scale(0.9);
+  transform:scale(0.9);
+*/
+}
+
+header {
+  width: 1280px;
+  height: 90px;
+  padding: 20px 0 0 40px;
+}
+
+header a img {
+  width: 300px;
+  height: auto;
+  float: left;
+  padding-left: 30px;
+}
+
+.col-sm img {
+  width: 300px; 
+  height: auto;
+}
+
+ul.menu {
+  margin-right: 0;
+  margin-left: 60%;
+  width: 76%;
+}
+
+ul.menu li {
+  list-style: none;
+  font-size: 1.5em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1%;
+}
+
+ul.menu li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+}
+
+ul.menu li a:hover {
+  color: rgb(235,117,65);
+  text-decoration: 5px solid rgb(235,225,195);
+}
+
+ul.menu li span i {
+  color: white;
+  font-size: 0.5em;
+}
+
+ul.menu li i {
+  color: white;
+  font-size: 0.8em;
+}
+
+ul.menu li.cart {  
+  background-color: rgb(235,225,195);
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+ul.menu li.cart span {
+  color: rgb(48,48,48);
+  padding: 0 10px;
+}
+
+ul.menu li.cart i {
+  color: rgb(48,48,48);
+  padding: 0 5px;
+}
+
+.dropdown ul {
+  display: none;
+  min-width: 200px;
+  text-align: right;
+  z-index: 1000;
+}
+
+.dropdown ul li {
+  list-style: none;
+  font-size: 1.1em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  display: inline-block;
+}
+
+.dropdown ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+}
+
+#slider ul li {
+  list-style: none;
+}
+
+#slider div.caption {
+  padding-top: 150px;
+}
+
+#slider h1, p {
+  color: #000;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#slider h1 {
+  font-size: 48px;  
+  line-height: 50px;
+  margin-bottom: 15px;
+}
+
+#slider p {
+  font-size: 31px;
+  line-height: 46px;
+  margin-bottom: 20px;  
+}
+
+#slider a.shop {
+  color: #ffffff;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  background-color: rgb(235,117,65);
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+/* INDEX.HTML */
+
+.container {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width:100%;
+}
+
+
+.banner {
+  width: 100%;
+  background-color: rgb(237,233,221);
+}
+
+.banner div.container {
+  margin: 0 250px;
+}
+
+.banner img {
+   display: block;  
+  margin: 10px auto; 
+}
+
+
+.features {
+  padding: 15px 0;  
+}
+.features ul {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.features ul li {  
+  list-style: none;
+  display: inline-block;
+  width: 375px;
+  height: 375px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.features ul li h2 {
+  font-size: 1.8em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;  
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  text-align: center;
+}
+
+.feature1 {
+  background-image: url(/images/home/feature1.jpg);
+  background-size: cover;  
+}
+
+.feature2 {
+  background-image: url(/images/home/feature2.jpg);
+  background-size: cover; 
+}
+
+.feature3 {
+  background-image: url(/images/home/feature3.jpg);
+  background-size: cover; 
+  margin-right: 0;
+}
+
+.features ul li a img {
+  width: 370px;
+  height: auto;
+  padding-right: 10%;
+}
+
+.features ul li a img.last {
+  width: 370px;
+  height: auto;
+  padding-right: 0;
+}
+
+
+#floating-button {
+  position:fixed; 
+  right:0; 
+  top:45%;
+  padding: 10px;
+  background-color: rgb(235,117,65);
+  color: #ffffff;
+  opacity: .7;
+  height: 30px;
+  width: 90px;
+  z-index: 999;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  
+}
+
+#floating-button #review {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 0 0 10px;
+}
+
+#floating-button #review i {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.products {
+  padding: 0 70px;
+}
+
+.products h2 {
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+#mainbox {
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.card {
+  display: inline-block;
+  width: 300px;
+  min-height: 250px;
+  padding: 10px 35px 10px 35px;
+  margin: 10px 10px 0 10px;
+  cursor: pointer;
+}
+
+.card img {
+  max-height: 200px;
+  max-height: auto;
+  display: block;  
+  margin: 10px auto; 
+}
+
+.card p {
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  color: black;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 10px;
+} 
+
+.card p.price {
+  font-weight: bold;
+}
+
+
+#addl-content {
+  width: 100%;
+  color: rgb(48,48,48);
+}
+
+#news {
+  width: 50%;
+  float: left;
+}
+
+#news .title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 25px;
+  border-top: 1px solid rgb(227,227,227);
+  border-bottom: 1px solid rgb(227,227,227);
+  margin: 0 20px 20px 80px;
+  padding: 10px 0;
+}
+
+.entry {
+  margin-left: 80px;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.entry p {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.entry p.entry-title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 20px;
+  text-transform: uppercase;  
+  margin-bottom: 2px;
+}
+
+.entry p.date {
+  margin-bottom: 8px;
+  color: rgb(204,204,204);
+  font-size: 13px;
+}
+
+.entry p.content a {
+  text-decoration: none;
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#twitter {
+  width: 50%;
+  float: left;
+}
+
+#twitter ul li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+#twitter .username a img {
+  width: 65px;
+  height: 65px;
+}
+
+
+#twitter a {
+  text-decoration: none;
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+}
+
+#twitter .handle, .date {
+  color: rgb(204,204,204);
+}
+/*
+
+#twitter .date {
+  float: right;
+}
+*/
+
+#twitter .title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 25px;
+  border-top: 1px solid rgb(227,227,227);
+  border-bottom: 1px solid rgb(227,227,227);
+  margin: 0 80px 20px 10px;
+  padding: 10px 0;
+}
+
+#twitter p.message {
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgb(48,48,48);
+}
+
+.reply img {
+  width: 15px;
+  height: auto;
+}
+
+.retweet img {
+  width: 15px;
+  height: auto;
+}
+
+.like i {
+  width: 15px;
+  height: auto;
+}
+
+#twitter i {
+  color: rgb(162,162,162);
+}
+
+#footer1 {
+  clear: both;
+  background-color: rgb(249,247,243);
+}
+
+#footer1 ul {
+  float: left;
+}
+
+#footer1 ul .title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 25px;
+  border-top: 1px solid rgb(227,227,227);
+  border-bottom: 1px solid rgb(227,227,227);
+  margin: 0 80px 20px 10px;
+  padding: 10px 0;
+}
+
+#footer1 ul li {
+  list-style: none;
+  padding-left: 10px;
+}
+
+#footer1 ul li a {
+  text-decoration: none;
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+#footer1 #signup {
+  width: 25%;
+}
+
+#signup input {
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
+}
+
+#signup button {
+  width: 80%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border-bottom-color: rgb(235,117,65);
+  border-bottom-width: 2.5px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  background-color: rgb(238,118,57);  
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#signup p {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(48,48,48);
+  text-transform: none;
+  width: 80%;
+  line-height: 25px;
+}
+#footer1 #healthbars {
+  width: 40%;
+}
+
+#footer1 #learn {
+  width: 25%;
+}
+
+#footer1 ul li a:hover {
+  color: rgb(115,115,115);
+}
+
+footer {
+  clear: both;
+  background-color: rgb(237,233,221);
+  height: 80px;
+  position: relative;
+}
+
+footer p {
+  float: left;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(48,48,48);
+  text-transform: none;
+  padding-top: 35px;
+  padding-left: 80px;
+}
+
+footer ul {
+  position: absolute;
+  right: 80px;
+  bottom: 10px;
+}
+footer ul li {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+footer ul li img {
+  width: 40px;
+  height: auto;
+}
+
+
+
+/* SHOP STYLES */
+
+#products {
+  font-family: 'Parisienne', cursive;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 0 0 0 70px;
+  height: 60px;
+}
+
+
+/* CAUSE STYLES */
+
+.main-img {  
+  position: relative;
+  float: left;
+  -moz-transform:scale(0.8);
+  -webkit-transform:scale(0.8);
+  transform:scale(0.8);
+   display: block;  
+  margin: 10px auto; 
+}
+
+
+/* hiding upper left */
+#info {
+  height: 100px;
+  padding: 0;
+  margin-top: 1500px;
+}
+
+span.bold {
+  font-weight: 500;
+}
+
+#info p {
+  text-transform: uppercase;
+}
+
+/*#give {
+  margin: 10px auto;
+}*/
+
+#give ul li {  
+  list-style: none;
+  display: inline-block;
+  width: 275px;
+  height: 350px;
+  padding: 0 10px;
+  vertical-align: top;
+}
+
+#give ul li img {
+  width: 275px;
+  height: auto;
+}
+
+#give ul li p {
+  color: rgb(48,48,48);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  margin: 5px;
+  line-height: 20px;
+}
+
+#give ul li p span {
+  font-weight: bold;
+}
+
+#malnutrition {
+  margin: 0 170px;
+}
+
+#malnutrition ul li {
+  color: rgb(48,48,48);
+  list-style: none;
+  display: inline-block;
+  width: 275px;
+  height: 270px;
+  padding: 0 20px;
+}
+
+#malnutrition ul li img {
+  width: 190px;
+  height: auto;
+}
+
+#malnutrition ul li p {
+  color: rgb(48,48,48);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  margin: 5px;
+  line-height: 20px;
+}
+
+#malnutrition ul li p span {
+  font-weight: bold;
+}
+
+#partners {
+  margin: 0 80px;
+}
+
+#partners ul li {
+  display: inline-block;
+  width: 175px;
+  height: 350px;
+  padding: 0 30px;
+  margin: 0 60px;
+}
+
+#partners ul li img {
+  width: 170px;
+  height: auto;
+  vertical-align: top;
+}
+
+.h2 {
+  font-family: 'Parisienne', cursive;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 0 0 0 70px;
+  height: 60px;
+  text-align: center;
+}
+
+
+/* STORY STYLES */
+div.vid {
+  margin: 50px 350px;
+  width: 600px;
+  height: 500px;
+}
+
+#about {
+  margin: 250px 20px 10px 50px;
+  width: 61%;
+  float: left;
+}
+
+#about h2 {
+  font-weight: 400;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+/*  font-size: 14px;*/
+}
+
+#about p {
+  color: rgb(48,48,48);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#grassia {
+  margin-top: 270px;
+  width: 30%;
+  float: left;
+}
+
+.contact {
+  clear: both;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.right {
+  float: right;
+}
+
+.contact {
+  margin: 20px 0 80px 50px;
+}
+
+.contact h2 {
+  font-weight: 400;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.contact p {
+  color: rgb(48,48,48);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: rgb(48,48,48);
+}
+
+
+
+/* BLOG STYLES */
+
+.blog-categories {
+  float: right;
+  margin-right: 30px;
+  padding-right: 60px;
+}
+
+.blog-categories select { 
+  color: rgb(115,115,115);
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  margin-top: 120px;
+  margin-bottom: 15px;    
+}
+
+#blog-header {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 44px;
+  text-transform: uppercase; 
+  width: 250px;
+  height: 40px;
+  margin: 0;
+/*
+  float: left;
+  margin: 250px 0 0 50px;
+*/
+}
+
+#posts {
+  width: 100%;
+  clear: both;
+}
+
+.post {
+  width: 100%;
+}
+
+.post-data {
+  width: 30%;
+  float: left;
+}
+
+.post-content {
+  width: 60%;
+  float: left;
+  border-left: 1px solid rgb(204,204,204);
+  margin: 0 50px 40px 0;
+  padding-left: 40px;
+}
+
+.post-content img {
+  display: block;  
+  margin: 10px auto; 
+  
+}
+
+.post-data ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+li.tags {
+  border-bottom: 1px solid rgb(204,204,204);
+}
+
+li.comments {
+  color: rgb(162,162,162);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+}
+
+ul.listed-tags {
+  margin: 10px 0;
+  padding: 0 20px 0 0;
+}
+
+ul.listed-tags li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid rgb(204,204,204);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+ul.listed-tags a {
+  text-decoration: none;
+  color: rgb(162,162,162);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+}
+
+.post-date {
+  color: rgbb(48,48,48);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 25px;
+}
+
+ul.social-media-icons {
+  color: rgb(162,162,162);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+.social-media-icons i {
+  color: rgb(162,162,162);
+}
+
+p.entry-title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 28px;
+  text-transform: uppercase; 
+}
+
+p.subtitle {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 16px;
+  text-transform: none;
+}
+
+p.content {
+  color: rgb(48,48,48);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/* AUTH STYLES */
+
+.auth {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth h2 {
+  font-family: "Just Another Hand", sans-serif;
+}
+
+.auth input {
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
+}
+
+.auth button {
+  width: 40%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border-bottom-color: rgb(235,117,65);
+  border-bottom-width: 2.5px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  background-color: rgb(238,118,57);  
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.auth span {
+  color: rgb(235,117,65);
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Admin styles */
+
+.admin {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.admin h2 {
+  font-family: "Just Another Hand", sans-serif;
+}
+
+.admin input {
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
+}
+
+.admin button {
+  width: 40%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border-bottom-color: rgb(235,117,65);
+  border-bottom-width: 2.5px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  background-color: rgb(238,118,57);  
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.admin span {
+  color: rgb(235,117,65);
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.admin > .popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(238,118,57);
+  min-height: 90px;
+  min-width: 200px;
+  font-size: 24px;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.admin > .half-page.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.admin > .half-page.productsWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.thumbnail {
+  height: 100px;
+  width: auto;
+  max-height: 100px;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Product Details page*/
+
+.productDetails {
+  padding: 5px;
+}
+
+.productImg {
+  height: 400px;
+  width: auto;
+  float: left;
+  margin: 10px;
+}
+
+
+/* Cart page */
+
+.miniThumb {
+  height: 40px;
+  width: 40px;
+}
+
+.cartContainer {
+  /*max-height: 80%;*/
+  min-height: 50%;
+  max-width: 80%;
+  min-width: 80%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartList {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cartItem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/* order confirmation */
+
+.orderConfirm {
+  position: fixed;
+  top: 10%;
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/** {
+  outline: 1px dotted red;
+}*/
+
+/* edit product modal */
+.modalMask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1001;
+}
+
+.editProductModal {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  /*position: fixed;
+  top: 10%;
+  margin: 0 auto;*/
+  min-height: 50%;
+  width: 60%;
+  z-index: 1002;
+}

@@ -1,0 +1,15 @@
+<div class="modalMask">
+	<div class="editProductModal">
+		<image class="miniThumb" ng-src="{{edit.product.image}}" />
+		Name:<input type="text" placeholder="{{edit.product.name}}" ng-model="edit.newProduct.name">
+		Description:<input type="textarea" placeholder="{{edit.product.description}}" ng-model="edit.newProduct.description">
+		Price:<input type="number" placeholder="{{edit.product.price}}" ng-model="edit.newProduct.price">
+		Details:<input type="textarea" placeholder="{{edit.product.details}}" ng-model="edit.newProduct.details">
+		Image URL:<input type="text" placeholder="{{edit.product.image}}" ng-model="edit.newProduct.image">
+		Image alt text:<input type="text" placeholder="{{edit.product.imageAlt}}" ng-model="edit.newProduct.imageAlt">
+		<div>
+			<button ng-click="edit.save(edit.newProduct)">Save</button>
+			<button ng-click="edit.cancel()">Cancel</button>
+		</div>
+	</div>
+</div>

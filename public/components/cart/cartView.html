@@ -1,0 +1,29 @@
+<div class="cartContainer">
+	<div ng-if="!cart.products.length">
+		<p>Looks like you haven't put anything in your cart. Now is a great time to
+			<a ui-sref="main.products"> go shopping!</a>
+		</p>
+	</div>
+	<div ng-if="cart.products.length" class="cartList">
+		<a ui-sref="main.products"><button>Continue Shopping</button></a>
+		<div class="cartItem" ng-repeat="item in cart.products">
+			<div>
+				<a ui-sref="main.productsdetail({id: item.product._id})"><image class="miniThumb" ng-src="{{item.product.image}}" /></a>
+				<h4>{{item.product.name}} </h4>
+				<h6>{{item.product.description}}</h6>
+				<br />
+			</div>
+			<div>
+				<h5>{{item.qty}} @ {{item.product.price | currency}} = {{item.product.price * item.qty | currency}}</h5>
+				<input type="number" placeholder="{{item.qty}}" ng-model="item.newQty">
+				<button ng-click="cart.update(item.product._id, item.newQty)">update qty</button>
+				<span ng-click="cart.remove(item.product._id)"><i class="fa fa-trash"></i></span>
+
+			</div>
+			<br />
+		</div>
+		subtotal: {{cart.subtotal | currency}}
+		<a ui-sref="main.checkout"><button>Checkout</button></a>
+
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<a ui-sref="main.auth"><button>Back</button></a>
+<div>
+	<h2>{{order.details._id}}<h2>
+	<h4>{{order.details.date | date}}</h4>
+		<div ng-repeat="item in order.details.products">
+		<image class="miniThumb" ng-src="{{item.product.image}}" />
+		<p>Name: {{item.product.name}}</p>
+		<p>Quantity: {{item.qty}}</p>
+			
+		</div>
+		<h4>Status: Pending</h4>
+</div>

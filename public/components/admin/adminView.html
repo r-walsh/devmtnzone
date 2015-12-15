@@ -1,0 +1,31 @@
+<div class="admin">
+	<div class="half-page form">
+		<div class="popup" ng-if="admin.addConfirm">
+			{{admin.addConfirm}}
+		</div>
+		<h2>Add a product</h2>
+		<input type="text" placeholder="Product name" ng-model="admin.newProduct.name">
+		<input type="textarea" placeholder="Description" ng-model="admin.newProduct.description">
+		<input type="number" placeholder="Price" ng-model="admin.newProduct.price">
+		<input type="textarea" placeholder="Details" ng-model="admin.newProduct.details">
+		<input type="text" placeholder="Image URL" ng-model="admin.newProduct.image">
+		<input type="text" placeholder="Image alt text" ng-model="admin.newProduct.imageAlt">
+		<button ng-click="admin.addProduct()">Add product</button>
+	</div>
+
+	<div class="half-page productsWrapper clearfix">
+		<div ng-repeat="item in admin.products" class="adminProducts">
+			<div class="flex-horizontal" ng-click="admin.edit(item)">
+				<image class="thumbnail" ng-src="{{item.image}}" alt="{{item.imageAlt}}" />
+				<br />
+			</div>
+			<div>
+				<span ng-click="admin.deleteItem(item._id)">
+					<i class="fa fa-trash"></i>
+				</span> {{item.name}} {{item.price | currency}}
+			</div>
+			<br />
+		</div>
+	</div>
+	<edit-product ng-if="admin.editing" product="admin.editItem" finish-edit="admin.finishEdit()"></edit-product>
+</div>

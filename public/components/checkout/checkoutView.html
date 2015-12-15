@@ -1,0 +1,46 @@
+<!--should show order preview (from cart)
+form with name and shipping info (address: (street, city, zip), phone #)
+popup confirm?-->
+<div ng-if="!checkout.orderComplete">
+<h2>Checkout</h2>
+<br />
+<div class="orderPreview">
+	<div ng-if="checkout.products.length" class="cartList">
+		<div class="cartItem" ng-repeat="item in checkout.products">
+			<div>
+				<a ui-sref="main.productsdetail({id: item.product._id})"><image class="miniThumb" ng-src="{{item.product.image}}" /></a>
+				<h4>{{item.product.name}} </h4>
+				<br />
+			</div>
+			<div>
+				<h5>{{item.qty}} @ {{item.product.price | currency}} = {{item.product.price * item.qty | currency}}</h5>
+
+			</div>
+			<br />
+		</div>
+		subtotal: {{checkout.subtotal | currency}}
+
+	</div>
+</div> 
+<div class="shippingInfo">
+	<form name="shippingInfo">
+		<input type="text" placeholder="Title" ng-model="checkout.orderDetails.title" required>
+		<br />
+		<input type="text" placeholder="First Name" ng-model="checkout.orderDetails.name.first" required>
+		<br />
+		<input type="text" placeholder="Last Name" ng-model="checkout.orderDetails.name.last" required>
+		<br />
+		<input type="text" placeholder="Street Address" ng-model="checkout.orderDetails.address.street" required>
+		<br />
+		<input type="text" placeholder="City" ng-model="checkout.orderDetails.address.city" required>
+		<br />
+		<input type="text" placeholder="Zip Code" ng-model="checkout.orderDetails.address.zip" required>
+		<br />
+		<button ng-disabled="shippingInfo.$invalid" ng-click="checkout.order()">Place Order</button>
+	</form>
+</div>
+</div>
+
+<div ng-if="checkout.orderComplete">
+	<div class="orderConfirm" ng-include="'components/partials/orderconfirmView.html'"></div>
+</div>

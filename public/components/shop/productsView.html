@@ -1,0 +1,15 @@
+<div>
+  <h1 id="products">Products</h1>
+</div>
+
+<div class="flex-horizontal clearfix">
+  <div ng-repeat="item in shop.products">
+    <div class="card" ng-click="shop.viewItem(item._id)">
+      <img ng-src="{{item.image}}" alt="{{item.imageAlt}}" />
+      <p>{{item.name}}</p>
+      <p class="price">{{item.price | currency}}</p>
+    </div>
+  </div>
+</div>
+
+<div ng-include="'components/partials/footer.html'"></div>
