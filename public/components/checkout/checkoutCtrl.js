@@ -1,7 +1,5 @@
-/* global angular */
-var app = angular.module('ecommerce');
-
-app.controller('CheckoutCtrl', function ($state, $window, products, cartService, checkoutService) {
+angular.module('ecommerce')
+.controller('CheckoutCtrl', function ($window, cartService, checkoutService) {
 	var checkout = this;
 
 	checkout.products = products;
@@ -17,7 +15,6 @@ app.controller('CheckoutCtrl', function ($state, $window, products, cartService,
 				cartService.clearCart();
 				checkout.orderNumber = orderNumber;
 				checkout.orderComplete = true;
-				// $state.go('main.orderconfirm');
 			})
 			.catch(function (err) {
 				console.log(err);

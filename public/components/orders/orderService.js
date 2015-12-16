@@ -1,18 +1,7 @@
-var app = angular.module('ecommerce')
-
-app.service('orderService', function ($http, $q) {
+angular.module('ecommerce')
+.service('orderService', function ($http) {
 
 	this.getOrderDetails = function (id) {
-		var dfd = $q.defer();
 
-		$http.get('/api/orderDetails/' + id)
-			.then(function (order) {
-				dfd.resolve(order.data);
-			})
-			.catch(function (err) {
-				dfd.reject(err);
-			})
-
-		return dfd.promise;
 	}
 })

@@ -1,12 +1,6 @@
-/* global angular */
-var app = angular.module('ecommerce');
-
-app.controller('CartCtrl', function ($state, cartService, products) {
+angular.module('ecommerce')
+.controller('CartCtrl', function ($state, cartService) {
 	var cart = this;
-
-	cart.products = products || [];
-
-	cart.subtotal = cartService.getSubtotal();
 
 	cart.update = function (itemId, quantity) {
 		cartService.updateCart(itemId, quantity)

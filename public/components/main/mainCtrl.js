@@ -1,11 +1,6 @@
-var app = angular.module('ecommerce');
-
-app.controller('MainCtrl', function (authService) {
+angular.module('ecommerce')
+.controller('MainCtrl', function () {
 	
 	var main = this;
-	
-	main.isLoggedIn = function () {
-		return authService.isLoggedIn();
-	}
 	
 })

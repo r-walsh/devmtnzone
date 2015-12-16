@@ -1,21 +1,8 @@
-var app = angular.module('ecommerce');
-
-app.service('checkoutService', function ($http, $q) {
+angular.module('ecommerce')
+.service('checkoutService', function ($http) {
 
 	this.placeOrder = function (orderDetails) {
-		var dfd = $q.defer();
 
-		$http.post('/api/placeOrder', {
-			orderDetails: orderDetails
-		})
-			.then(function (order) {
-				dfd.resolve(order.data._id)
-			})
-			.catch(function (err) {
-				dfd.reject(err);
-			})
-
-		return dfd.promise;
 	}
 
-})
+});

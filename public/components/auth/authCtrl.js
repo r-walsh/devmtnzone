@@ -1,7 +1,5 @@
-/* global angular */
-var app = angular.module('ecommerce');
-
-app.controller('AuthCtrl', function (authService, $state) {
+angular.module('ecommerce')
+.controller('AuthCtrl', function (authService, $state) {
 	var auth = this;
 	auth.test = 'auth';
 	auth.showRegister = false;
@@ -19,7 +17,7 @@ app.controller('AuthCtrl', function (authService, $state) {
 	auth.register = function () {
 		authService.register(auth.user)
 			.then(function (message) {
-				// console.log(message);
+
 			})
 			.catch(function (err) {
 				console.log(err);
@@ -37,7 +35,6 @@ app.controller('AuthCtrl', function (authService, $state) {
 				authService.findMyOrders().then(function (orders) {
 					auth.orders = orders;
 				});
-				//user is now logged in and saved in localStorage
 			})
 			.catch(function (err) {
 				console.log(err);

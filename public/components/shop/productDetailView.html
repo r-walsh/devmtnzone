@@ -1,21 +1,3 @@
-
-
-<!--<div class="productDetails">
-	<div>
-		<image ng-src="{{detail.product.image}}"></image>
-		<input type="number" ng-model="detail.quantity"/>
-		<button ng-click="detail.addToCart()">Add to cart</button>
-	</div>
-	<h2> {{detail.product.name}}</h2>
-	<h3> {{detail.product.price | currency }}</h3>
-</div>
-
-<div>
-	Description: {{detail.product.description}}
-	<br>
-	Ingredients: {{detail.prodeuct.ingredients}}
-</div>-->
-
   <div class="product-slider">
     <image class="productImg" ng-src="{{detail.product.image}}" alt="{{detail.product.imageAlt}}" />
   </div>
@@ -36,7 +18,5 @@
     <p><span>The low down:</span> {{detail.product.details}}</p>
 
   </div>
-
-<!-- could show similar products here -->
 
 <div ng-include="'components/partials/footer.html'"></div>

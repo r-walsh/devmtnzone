@@ -1,10 +1,6 @@
-/* global angular */
-var app = angular.module('ecommerce');
-
-app.controller('DetailCtrl', function (product, $state, cartService) {
+angular.module('ecommerce')
+.controller('DetailCtrl', function ($state, cartService) {
 	var detail = this;
-
-	detail.product = product;
 
 
 	detail.addToCart = function (itemId, quantity) {

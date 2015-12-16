@@ -1,11 +1,8 @@
-/* global angular */
-var app = angular.module('ecommerce');
-
-app.controller('AdminCtrl', function (adminService, $timeout, products) {
+angular.module('ecommerce')
+.controller('AdminCtrl', function (adminService, $timeout) {
 	var admin = this;
 	admin.addConfirm = '';
 	admin.editing = false;
-	admin.products = products;
 
 	admin.addProduct = function () {
 		adminService.addProduct(admin.newProduct)

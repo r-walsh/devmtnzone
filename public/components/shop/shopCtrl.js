@@ -1,11 +1,8 @@
-var app = angular.module('ecommerce');
-
-app.controller('ShopCtrl', function (products, $state) {
+angular.module('ecommerce')
+.controller('ShopCtrl', function ($state) {
 	var shop = this;
 	
-	shop.products = products;
-	
 	shop.viewItem = function (id) {
-		$state.go('main.productsdetail', {id: id})
+		
 	}
 })

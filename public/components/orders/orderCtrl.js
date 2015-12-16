@@ -1,8 +1,5 @@
-/* global angular */
-var app = angular.module('ecommerce');
-
-app.controller('OrderCtrl', function (orderDetails) {
+angular.module('ecommerce')
+.controller('OrderCtrl', function () {
 	var order = this;
 
-	order.details = orderDetails;
 });

@@ -1,7 +1,5 @@
-/* global angular */
-var app = angular.module('ecommerce');
-
-app.directive('editProduct', function () {
+angular.module('ecommerce')
+.directive('editProduct', function () {
 	return {
 		scope: {
 			product: '=',
@@ -14,7 +12,6 @@ app.directive('editProduct', function () {
 			var edit = this;
 
 			edit.save = function (updatedProduct) {
-				// TODO call adminService to update the item
 				updatedProduct._id = edit.product._id;
 				adminService.updateProduct(updatedProduct)
 					.then(function () {
